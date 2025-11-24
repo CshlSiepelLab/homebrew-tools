@@ -7,7 +7,8 @@ class Phast < Formula
 
   depends_on "cmake" => :build
   depends_on "openblas" # for Linux; on macOS veclib/Accelerate is fine
-
+  depends_on "pcre"
+  
   def install
     mkdir "build" do
       system "cmake", "..", *std_cmake_args,
