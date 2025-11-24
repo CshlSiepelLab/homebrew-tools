@@ -8,6 +8,7 @@ class Vine < Formula
   depends_on "cmake" => :build
   depends_on "phast"
   depends_on "openblas" # for Linux, similar as above if needed
+  depends_on "pcre" 
 
   def install
     mkdir "build" do
