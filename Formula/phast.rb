@@ -2,7 +2,7 @@ class Phast < Formula
   desc "Phylogenetic Analysis with Space/Time models"
   homepage "https://github.com/CshlSiepelLab/phast"
   url "https://github.com/CshlSiepelLab/phast/archive/refs/tags/1.7.0.tar.gz"
-  sha256 "af45c1b0922f578ed0b3698eb765a45cd4030072f838558155beb9545b613b47"
+  sha256 "d10907034920def680c3e8b55e17d5369a5ba7415d78cc59d517d9c67993ec4e"
   license "BSD-3-Clause"
 
   depends_on "cmake" => :build
