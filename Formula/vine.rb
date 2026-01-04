@@ -1,14 +1,12 @@
 class Vine < Formula
   desc "Variational Inference with Node Embedding"
   homepage "https://github.com/CshlSiepelLab/vine"
-  url "https://github.com/CshlSiepelLab/vine/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "5b2034bb4d6ac5a3bdfc0ead45db27bde9d5845225c7c3f63c15927b0681fe3f"
+  url "https://github.com/CshlSiepelLab/vine/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "aa7de61a71c0c785d7f0e0b16657fe89463d7ff1a7d5cdbaf6eb4b4005189dc7"
   license "BSD-3-Clause"
 
   depends_on "cmake" => :build
   depends_on "phast"
-  depends_on "openblas" # for Linux, similar as above if needed
-  depends_on "pcre" 
 
   def install
     mkdir "build" do
