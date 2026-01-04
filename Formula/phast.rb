@@ -1,8 +1,8 @@
 class Phast < Formula
   desc "Phylogenetic Analysis with Space/Time models"
   homepage "https://github.com/CshlSiepelLab/phast"
-  url "https://github.com/CshlSiepelLab/phast/archive/refs/tags/v1.9.1.tar.gz"
-  sha256 "f9e937fcc64c17686984b82e73083d4af0cff63332305f0a8314577c11944c5d"
+  url "https://github.com/CshlSiepelLab/phast/archive/refs/tags/v1.9.2.tar.gz"
+  sha256 "2df9527c44eb9d7c6c90a9011570bbc03056f7e76806dac8766d3458fb87238f"
   license "BSD-3-Clause"
 
   depends_on "cmake" => :build
@@ -11,11 +11,8 @@ class Phast < Formula
   
   def install
     mkdir "build" do
-      system "cmake", "..", *std_cmake_args,
-             "-DPHAST_LAPACK_BACKEND=Generic",   # whatever you called it
-             "-DBLAS_LIBRARIES=#{Formula["openblas"].opt_lib}/libopenblas.dylib",
-             "-DLAPACK_LIBRARIES=#{Formula["openblas"].opt_lib}/libopenblas.dylib"
-      system "cmake", "--build", "."
+      system "cmake", "..", *std_cmake_args
+      system "cmake", "--build", ".", "--parallel"
       system "cmake", "--install", "."
     end
   end
