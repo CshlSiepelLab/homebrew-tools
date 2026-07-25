@@ -1,8 +1,8 @@
 class Vine < Formula
   desc "Variational Inference with Node Embedding"
   homepage "https://github.com/CshlSiepelLab/vine"
-  url "https://github.com/CshlSiepelLab/vine/archive/refs/tags/v0.3.4.tar.gz"
-  sha256 "b1992ac7c9bd5515b2ae7857bbb559c830b5e35c6e82fb73e3dcf29cca9329e9"
+  url "https://github.com/CshlSiepelLab/vine/archive/refs/tags/v0.3.5.tar.gz"
+  sha256 "8eb4e5359ac2afc55894118c6d3399efac225e66fde9eb16b96742c213035414"
   license "BSD-3-Clause"
 
   depends_on "cmake" => :build
